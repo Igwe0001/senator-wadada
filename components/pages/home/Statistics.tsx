@@ -112,7 +112,7 @@ function Statistics() {
           <div className="relative hidden sm:flex w-[700px] h-[420px] items-center justify-center">
             {/* Left Image */}
             <motion.div className="absolute left-0 z-10" variants={rotateInLeft} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
-              <Image src={assets.image1} alt="portrait" width={260} height={360} className="rounded-3xl shadow-xl object-cover" />
+              <Image src={assets.imageLeft} alt="portrait" width={260} height={360} className="rounded-3xl shadow-xl object-cover" />
             </motion.div>
 
             {/* Center Image */}
@@ -128,7 +128,7 @@ function Statistics() {
 
             {/* Right Image */}
             <motion.div className="absolute right-0 z-10" variants={rotateInRight} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
-              <Image src={assets.image3} alt="portrait" width={260} height={360} className="rounded-3xl shadow-xl object-cover" />
+              <Image src={assets.imageRight} alt="portrait" width={260} height={360} className="rounded-3xl shadow-xl object-cover" />
             </motion.div>
           </div>
         </div>
@@ -142,7 +142,7 @@ function Statistics() {
           animate={bannerInView ? { scale: 1 } : { scale: 1.05 }}
           transition={{ duration: 1.4, ease: EASE }}
         >
-          <Image src={assets.image4} alt="Ahmed Wadada Aliyu" fill priority className="object-cover [object-position:0_-120px] grayscale" />
+          <Image src={assets.image4} alt="Ahmed Wadada Aliyu" fill priority className="object-cover lg:[object-position:0_-120px] grayscale" />
         </motion.div>
 
         <motion.div

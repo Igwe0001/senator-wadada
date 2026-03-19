@@ -110,7 +110,7 @@ function Contact() {
         animate={heroInView ? "visible" : "hidden"}
         className="w-full h-[700px] relative"
       >
-        <Image src={assets.hero} alt="Ahmed Wadada Aliyu" fill priority className="object-cover [object-position:0_-120px] grayscale" />
+        <Image src={assets.hero} alt="Ahmed Wadada Aliyu" fill priority className="object-cover lg:[object-position:0_-120px] grayscale" />
 
         {/* Gradients - original */}
         <motion.div

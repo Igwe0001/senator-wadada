@@ -306,7 +306,7 @@ function Statistics() {
           animate={bannerInView ? { scale: 1 } : { scale: 1.05 }}
           transition={{ duration: 1.4, ease: EASE }}
         >
-          <Image src={assets.image32} alt="Ahmed Wadada Aliyu" fill priority className="object-cover [object-position:0_-320px]" />
+          <Image src={assets.honoursHero} alt="Ahmed Wadada Aliyu" fill priority className="object-cover [object-position:0_-320px]" />
         </motion.div>
 
         <motion.div

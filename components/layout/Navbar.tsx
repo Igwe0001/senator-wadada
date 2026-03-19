@@ -142,7 +142,7 @@ export default function Navbar() {
           {/* LOGO */}
           <Link href="/">
             <h1
-              className={`anton tracking-wider font-semibold text-lg transition-colors duration-300
+              className={`anton tracking-wider text-lg transition-colors duration-300
                 ${isDarkPage ? "text-black" : "text-white"}`}
             >
               Sen. Ahmed Wadada Aliyu
@@ -188,10 +188,10 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className={`md:hidden p-3 rounded-full transition-colors
-              ${isDarkPage ? "bg-[#375DFB]" : "bg-white"}`}
+              ${isDarkPage ? "bg-[#375DFB]" : "bg-gray-500"}`}
           >
             <div className="w-5 h-5 flex flex-col justify-center items-center">
-              <span className={`block w-5 h-0.5 bg-white transition ${mobileMenuOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`} />
+              <span className={`block w-5 h-0.5 bg-white transition ${mobileMenuOpen ? "rotate-45 translate-y" : "-translate-y-1"}`} />
               <span className={`block w-5 h-0.5 bg-white transition ${mobileMenuOpen ? "opacity-0" : "opacity-100"}`} />
               <span className={`block w-5 h-0.5 bg-white transition ${mobileMenuOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"}`} />
             </div>

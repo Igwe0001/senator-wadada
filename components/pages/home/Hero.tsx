@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 
@@ -42,27 +43,23 @@ const slideUp = {
   },
 };
 
+const scrollToVision = () => {
+  const el = document.getElementById("vision");
+  if (el) el.scrollIntoView({ behavior: "smooth" });
+};
+
 function Hero() {
   return (
     <section id="hero" className="relative p-2">
       <div className="relative h-[100svh] min-h-[580px] overflow-hidden rounded-xl w-full">
         {/* Background Image */}
         <motion.div className="absolute inset-0" initial={{ scale: 1.06 }} animate={{ scale: 1 }} transition={{ duration: 1.6, ease: EASE }}>
-          <Image src={assets.hero} alt="Ahmed Wadada Aliyu" fill priority className="object-cover" />
+          <Image src={assets.newHero} alt="Ahmed Wadada Aliyu" fill priority className="object-cover lg:[object-position:0_-120px]" />
         </motion.div>
 
         {/* Top gradient */}
         <motion.div
-          className="absolute top-0 left-0 w-full h-40 bg-gradient-to-b from-black/100 to-transparent z-10"
-          variants={fadeIn}
-          initial="hidden"
-          animate="visible"
-          custom={0.2}
-        />
-
-        {/* Bottom gradient */}
-        <motion.div
-          className="absolute bottom-0 left-0 w-full h-56 bg-gradient-to-t from-black/100 to-transparent z-10"
+          className="absolute w-full h-full bg-black/30 to-transparent z-10"
           variants={fadeIn}
           initial="hidden"
           animate="visible"
@@ -92,21 +89,29 @@ function Hero() {
               Ahmed Wadada Aliyu
             </motion.h1>
 
-            <motion.p
-              className="text-xs sm:text-sm md:text-base opacity-90 leading-relaxed max-w-sm sm:max-w-none"
-              variants={fadeUp}
-              initial="hidden"
-              animate="visible"
-              custom={0.4}
-            >
+            <motion.p className="opacity-90 leading-relaxed max-w-sm sm:max-w-none" variants={fadeUp} initial="hidden" animate="visible" custom={0.4}>
               Decades of service. A lifetime of commitment. A vision to transform Nasarawa State.
             </motion.p>
+
+            {/* Vision Button — visible on mobile only, sits under the text */}
+            <motion.div className="mt-5 sm:hidden" variants={slideInRight} initial="hidden" animate="visible">
+              <button
+                onClick={scrollToVision}
+                className="bg-white text-black text-sm px-4 py-2 rounded-full shadow-lg flex items-center gap-2 hover:bg-gray-100 active:scale-95 transition-all duration-200"
+              >
+                Our Vision
+                <Image src={assets.arrowDown} alt="arrow down" width={16} height={16} />
+              </button>
+            </motion.div>
           </div>
         </div>
 
-        {/* Vision Button */}
-        <motion.div className="absolute right-4 sm:right-6 bottom-24 sm:bottom-20 z-10" variants={slideInRight} initial="hidden" animate="visible">
-          <button className="bg-white text-black text-sm px-4 sm:px-5 py-2 rounded-full shadow-lg flex items-center gap-2 hover:bg-gray-100 active:scale-95 transition-all duration-200">
+        {/* Vision Button — visible on sm+ only, absolutely positioned bottom-right */}
+        <motion.div className="absolute right-6 bottom-20 z-10 hidden sm:block" variants={slideInRight} initial="hidden" animate="visible">
+          <button
+            onClick={scrollToVision}
+            className="bg-white text-black text-sm px-5 py-2 rounded-full shadow-lg flex items-center gap-2 hover:bg-gray-100 active:scale-95 transition-all duration-200"
+          >
             Our Vision
             <Image src={assets.arrowDown} alt="arrow down" width={16} height={16} />
           </button>
