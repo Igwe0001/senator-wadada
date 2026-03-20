@@ -100,7 +100,7 @@ function Statistics() {
           {/* Mobile — center image only */}
           <motion.div className="flex sm:hidden" variants={scaleIn} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
             <Image
-              src={assets.image2}
+              src={assets.image53}
               alt="portrait"
               width={260}
               height={340}
