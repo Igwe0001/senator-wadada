@@ -123,7 +123,7 @@ export default function Footer() {
           <p>© 2025 Senator Ahmed Wadada Aliyu. All Rights Reserved.</p>
           <p>
             Designed by{" "}
-            <a href="https://talkstuff.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#375DFB] transition-colors duration-150">
+            <a href="https://talkstuff.social" target="_blank" rel="noopener noreferrer" className="hover:text-[#375DFB] transition-colors duration-150">
               Talkstuff
             </a>
           </p>

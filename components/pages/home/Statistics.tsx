@@ -118,7 +118,7 @@ function Statistics() {
             {/* Center Image */}
             <motion.div className="absolute z-20" variants={scaleIn} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
               <Image
-                src={assets.image2}
+                src={assets.image53}
                 alt="portrait"
                 width={300}
                 height={400}

@@ -1,6 +1,6 @@
 import hero from "./hero.jpg";
 import newHero from "./hero.png";
-import honoursHero from './honours-hero.jpg';
+import honoursHero from "./honours-hero.jpg";
 import imageLeft from "./image-left.jpg";
 import imageRight from "./image-right.jpg";
 import arrowDown from "./arrow-down.svg";
@@ -56,6 +56,7 @@ import image49 from "./image-49.jpg";
 import image50 from "./image-50.jpg";
 import image51 from "./image-51.jpg";
 import image52 from "./image-52.jpg";
+import image53 from "./image-53.jpg";
 import mail from "./mail-01.svg";
 import phone from "./call-02.svg";
 
@@ -120,4 +121,5 @@ export const assets = {
   image50,
   image51,
   image52,
+  image53,
 };
