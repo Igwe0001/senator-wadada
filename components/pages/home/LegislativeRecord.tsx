@@ -73,7 +73,7 @@ export default function LegislativeRecord() {
 
   const records = [
     {
-      image: assets.image2,
+      image: assets.image53,
       title: "House of Representatives (2003–2010)",
       subtitle: "Pioneer Chairman & Key Committee Assignments",
       committees: [
