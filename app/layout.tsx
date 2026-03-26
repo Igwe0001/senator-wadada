@@ -3,6 +3,34 @@ import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import Footer from "@/components/layout/Footer";
 
+export const metadata = {
+  title: "Sen. Ahmed Wadada Aliyu",
+  description: "Decades of service. A lifetime of commitment. A vision to transform Nasarawa State.",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Sen. Ahmed Wadada Aliyu",
+    description: "Decades of service. A lifetime of commitment. A vision to transform Nasarawa State.",
+    url: "https://www.senatorahmedwadada.com/", // Your actual website URL
+    siteName: "Sen. Ahmed Wadada Aliyu",
+    images: [
+      {
+        url: "/og-image.png", // This is what shows when sharing!
+        width: 1200,
+        height: 630,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sen. Ahmed Wadada Aliyu",
+    description: "Decades of service. A lifetime of commitment. A vision to transform Nasarawa State.",
+    images: ["/og-image.png"], // For Twitter
+  },
+};
+
 const anton = Anton({
   subsets: ["latin"],
   weight: "400",
