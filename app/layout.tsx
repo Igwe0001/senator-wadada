@@ -9,6 +9,16 @@ export const metadata = {
   icons: {
     icon: "/favicon.ico",
   },
+  keywords: [
+    "Ahmed Wadada Aliyu",
+    "Senator Ahmed Wadada",
+    "Ahmed Wadada",
+    "Sen. Ahmed Wadada",
+    "Nasarawa West Senator",
+    "Nasarawa State Senator",
+    "Senator Nasarawa West",
+    "Ahmed Wadada Aliyu Nasarawa",
+  ],
   openGraph: {
     title: "Sen. Ahmed Wadada Aliyu",
     description: "Decades of service. A lifetime of commitment. A vision to transform Nasarawa State.",
