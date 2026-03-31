@@ -57,6 +57,38 @@ import image50 from "./image-50.jpg";
 import image51 from "./image-51.jpg";
 import image52 from "./image-52.jpg";
 import image53 from "./image-53.jpg";
+import image54 from "./image-54.jpg";
+import image55 from "./image-55.jpg";
+import image56 from "./image-56.jpg";
+import image57 from "./image-57.jpg";
+import image58 from "./image-58.jpg";
+import image59 from "./image-59.jpg";
+import image60 from "./image-60.jpg";
+import image61 from "./image-61.jpg";
+import image62 from "./image-62.jpg";
+import image63 from "./image-63.jpg";
+import image64 from "./image-64.jpg";
+import image65 from "./image-65.jpg";
+import image66 from "./image-66.jpg";
+import image67 from "./image-67.jpg";
+import image68 from "./image-68.jpg";
+import image69 from "./image-69.jpg";
+import image70 from "./image-70.jpg";
+import image71 from "./image-71.jpg";
+import image72 from "./image-72.jpg";
+import image73 from "./image-73.jpg";
+import image74 from "./image-74.jpg";
+import image75 from "./image-75.jpg";
+import image76 from "./image-76.jpg";
+import image77 from "./image-77.jpg";
+import image78 from "./image-78.jpg";
+import image79 from "./image-79.jpg";
+import image80 from "./image-80.jpg";
+import image81 from "./image-81.jpg";
+import image82 from "./image-83.jpg";
+import image83 from "./image-83.jpg";
+import image84 from "./image-84.jpg";
+import image85 from "./image-85.jpg";
 import mail from "./mail-01.svg";
 import phone from "./call-02.svg";
 
@@ -122,4 +154,36 @@ export const assets = {
   image51,
   image52,
   image53,
+  image54,
+  image55,
+  image56,
+  image57,
+  image58,
+  image59,
+  image60,
+  image61,
+  image62,
+  image63,
+  image64,
+  image65,
+  image66,
+  image67,
+  image68,
+  image69,
+  image70,
+  image71,
+  image72,
+  image73,
+  image74,
+  image75,
+  image76,
+  image77,
+  image78,
+  image79,
+  image80,
+  image81,
+  image82,
+  image83,
+  image84,
+  image85
 };

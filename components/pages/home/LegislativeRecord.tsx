@@ -73,7 +73,7 @@ export default function LegislativeRecord() {
 
   const records = [
     {
-      image: assets.image53,
+      image: assets.imageLeft,
       title: "House of Representatives (2003–2010)",
       subtitle: "Pioneer Chairman & Key Committee Assignments",
       committees: [
@@ -85,7 +85,7 @@ export default function LegislativeRecord() {
       ],
     },
     {
-      image: assets.image9,
+      image: assets.image53,
       title: "House of Representatives (2010–2011)",
       subtitle: "Chairman — Information & National Orientation",
       committees: [
@@ -96,7 +96,7 @@ export default function LegislativeRecord() {
       ],
     },
     {
-      image: assets.image10,
+      image: assets.imageRight,
       title: "Senate of the Federal Republic (2023–Present)",
       subtitle: "Chairman — Senate Public Accounts Committee (SPAC)",
       committees: [

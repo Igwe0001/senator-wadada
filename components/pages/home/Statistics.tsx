@@ -73,7 +73,7 @@ function Statistics() {
 
   return (
     <section id="about" className="w-full">
-      <div className="w-full flex flex-col items-center justify-center pt-4">
+      <div className="w-full flex flex-col items-center justify-center pt-4 pb-6">
         {/* Stats Row */}
         <div ref={statsRef} className="w-[90%] max-w-[500px] justify-between py-3 flex">
           {[
@@ -93,44 +93,6 @@ function Statistics() {
               <span className="font-medium text-[#6A6A6A] text-xs sm:text-sm text-center">{stat.label}</span>
             </motion.div>
           ))}
-        </div>
-
-        {/* Images */}
-        <div ref={imagesRef} className="w-full flex justify-center py-8">
-          {/* Mobile — center image only */}
-          <motion.div className="flex sm:hidden" variants={scaleIn} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
-            <Image
-              src={assets.image53}
-              alt="portrait"
-              width={260}
-              height={340}
-              className="rounded-3xl border border-[#EFEFF3] shadow-2xl object-cover"
-            />
-          </motion.div>
-
-          {/* Desktop — all three images */}
-          <div className="relative hidden sm:flex w-[700px] h-[420px] items-center justify-center">
-            {/* Left Image */}
-            <motion.div className="absolute left-0 z-10" variants={rotateInLeft} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
-              <Image src={assets.imageLeft} alt="portrait" width={260} height={360} className="rounded-3xl shadow-xl object-cover" />
-            </motion.div>
-
-            {/* Center Image */}
-            <motion.div className="absolute z-20" variants={scaleIn} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
-              <Image
-                src={assets.image53}
-                alt="portrait"
-                width={300}
-                height={400}
-                className="rounded-3xl border border-[#EFEFF3] shadow-2xl object-cover"
-              />
-            </motion.div>
-
-            {/* Right Image */}
-            <motion.div className="absolute right-0 z-10" variants={rotateInRight} initial="hidden" animate={imagesInView ? "visible" : "hidden"}>
-              <Image src={assets.imageRight} alt="portrait" width={260} height={360} className="rounded-3xl shadow-xl object-cover" />
-            </motion.div>
-          </div>
         </div>
       </div>
 
