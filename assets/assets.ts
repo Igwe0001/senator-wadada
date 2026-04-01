@@ -1,5 +1,6 @@
 import hero from "./hero.jpg";
 import newHero from "./hero.png";
+import altHero from './alt-hero.png';
 import honoursHero from "./honours-hero.jpg";
 import imageLeft from "./image-left.jpg";
 import imageRight from "./image-right.jpg";
@@ -96,6 +97,7 @@ export const assets = {
   mail,
   phone,
   hero,
+  altHero,
   arrowDown,
   newHero,
   honoursHero,

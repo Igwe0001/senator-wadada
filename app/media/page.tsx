@@ -26,8 +26,10 @@ export default function MediaPage() {
     { src: assets.image73.src, aspectRatio: "tall" },
     { src: assets.image75.src, aspectRatio: "tall" },
     { src: assets.image74.src, aspectRatio: "tall" },
-  ]; ;
+  ]; 
+  
   const communityEngagement: GalleryImage[] = [{ src: assets.image76.src }, { src: assets.image77.src }, { src: assets.image78.src }];
+
   const images: GalleryImage[] = [
     { src: assets.image79.src },
     { src: assets.image80.src },
@@ -90,7 +92,7 @@ export default function MediaPage() {
 
       {/* Gallery */}
       <div className="max-w-6xl mx-auto">
-        <h1 className="my-4 text-2xl text-white ">Development projects</h1>
+        <h1 className="my-4 text-2xl text-white ">Community Outreach</h1>
         <GalleryGrid images={developmentProjects} />
       </div>
       <div className="max-w-6xl mx-auto">
