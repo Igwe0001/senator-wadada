@@ -26,7 +26,7 @@ export const metadata = {
     siteName: "Sen. Ahmed Wadada Aliyu",
     images: [
       {
-        url: "/og-image.png", // This is what shows when sharing!
+        url: "https://www.senatorahmedwadada.com/og-image.png", // This is what shows when sharing!
         width: 1200,
         height: 630,
       },
@@ -37,7 +37,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Sen. Ahmed Wadada Aliyu",
     description: "Decades of service. A lifetime of commitment. A vision to transform Nasarawa State.",
-    images: ["/og-image.png"], // For Twitter
+    images: ["https://www.senatorahmedwadada.com/og-image.png"], // For Twitter
   },
 };
 
