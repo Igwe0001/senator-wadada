@@ -8,6 +8,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 1,
     },
-    // add other pages here
+    {
+      url: "https://www.senatorahmedwadada.com/media",
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: "https://www.senatorahmedwadada.com/honours",
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
   ];
 }
