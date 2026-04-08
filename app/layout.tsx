@@ -1,7 +1,8 @@
-import { Anton, Architects_Daughter } from "next/font/google";
-import Navbar from "@/components/layout/Navbar";
+import { Anton, Architects_Daughter, SN_Pro } from "next/font/google";
+
 import "./globals.css";
-import Footer from "@/components/layout/Footer";
+// import Footer from "@/components/layout/Footer";
+import Navbar from "@/components/layout/Navbar";
 
 export const metadata = {
   title: "Sen. Ahmed Wadada Aliyu",
@@ -53,6 +54,12 @@ const architectsDaughter = Architects_Daughter({
   variable: "--font-architects-daughter",
 });
 
+const SNPro = Architects_Daughter({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--sn-pro",
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -60,10 +67,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anton.variable} ${architectsDaughter.variable}`}>
+      <body className={`${anton.variable} ${architectsDaughter.variable} ${SNPro.variable} font-sn-pro`}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
