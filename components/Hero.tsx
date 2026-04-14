@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { motion, useInView, useMotionValue, useSpring, animate } from "framer-motion";
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 
 // ── Animated counter ──────────────────────────────────────────────────────────
 function AnimatedNumber({ target, suffix = "" }: { target: number; suffix?: string }) {
@@ -58,14 +59,14 @@ const slideRight = {
 // ── Stats data ────────────────────────────────────────────────────────────────
 const stats = [
   { value: 20, suffix: "+", label: "Years in Legislature" },
-  { value: 3,  suffix: "",  label: "Election Victories"  },
-  { value: 30, suffix: "+", label: "National Awards"     },
+  { value: 3, suffix: "", label: "Election Victories" },
+  { value: 30, suffix: "+", label: "National Awards" },
 ];
 
 // ── Component ─────────────────────────────────────────────────────────────────
 export default function Hero() {
   return (
-    <section className="relative min-h-screen bg-white overflow-hidden flex flex-col">
+    <section id="home" className="relative min-h-screen bg-white overflow-hidden flex flex-col">
       {/* Subtle background texture */}
       <div
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
@@ -83,7 +84,7 @@ export default function Hero() {
         >
           {/* Badge */}
           <motion.div variants={fadeUp}>
-            <span className="inline-flex font-sn-pro items-center gap-2 text-xs font-semibold text-[#1a5c38] border border-[#1a5c38]/30 bg-[#1a5c38]/5 px-4 py-1.5 rounded-full tracking-wide">
+            <span className="inline-flex font-fraunces items-center gap-2 text-xs font-semibold text-[#1a5c38] border border-[#1a5c38]/30 bg-[#1a5c38]/5 px-4 py-1.5 rounded-full tracking-wide">
               Nasarawa State
               <span className="w-1 h-1 rounded-full bg-[#1a5c38]/50 inline-block" />
               2027 Governorship
@@ -93,32 +94,35 @@ export default function Hero() {
           {/* Heading */}
           <motion.h1
             variants={fadeUp}
-            className="font-sn-pro text-4xl sm:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight"
+            className="font-fraunces text-4xl sm:text-5xl xl:text-6xl font-bold text-gray-900 leading-[1.1] tracking-tight"
           >
-            Ahmed <span className="text-primary">Wadada</span>
+            Ahmed <span className="text-stroke">Wadada</span>
             <br />
             Aliyu
           </motion.h1>
 
           {/* Tagline */}
-          <motion.p variants={fadeUp} className="text-gray-500 text-base sm:text-lg max-w-md leading-relaxed">
-            <em>Sarkin Yakin Keffi</em> — Senator, Statesman, and tireless servant of the people of Nasarawa State.
+          <motion.p
+            variants={fadeUp}
+            className="font-instrument-serif text-[#212121] font-semibold italic text-xl max-w-md leading-relaxed"
+          >
+            Sarkin Yakin Keffi — Senator, Statesman, and tireless servant of the people of Nasarawa State.
           </motion.p>
 
           {/* CTAs */}
           <motion.div variants={fadeUp} className="flex flex-wrap gap-4 pt-2">
-            <a
+            <Link
               href="#vision"
-              className="bg-primary text-white px-7 py-3 rounded-full font-semibold text-sm hover:bg-[#14472c] transition-all duration-200 shadow-md shadow-[#1a5c38]/20"
+              className="bg-primary text-white px-7 py-3 rounded-full font-semibold text-xl hover:bg-[#14472c] transition-all duration-200 shadow-md shadow-[#1a5c38]/20"
             >
               Our Vision
-            </a>
-            <a
-              href="/media"
-              className="border border-gray-300 text-gray-700 px-7 py-3 rounded-full font-semibold text-sm hover:border-[#1a5c38] hover:text-[#1a5c38] transition-all duration-200"
+            </Link>
+            <Link
+              href="/projects"
+              className="border border-gray-300 text-gray-700 px-7 py-3 rounded-full font-semibold text-xl hover:border-[#1a5c38] hover:text-[#1a5c38] transition-all duration-200"
             >
               View Media
-            </a>
+            </Link>
           </motion.div>
         </motion.div>
 
@@ -130,31 +134,25 @@ export default function Hero() {
           className="relative flex justify-center md:justify-end order-1 md:order-2"
         >
           {/* Decorative card behind photo */}
-          <div className="absolute top-6 right-0 md:-right-4 w-[88%] h-[92%] bg-[#EFEFF3] rounded-2xl" />
+          <div className="absolute top-6 right-0 md:-right-4 -rotate-5 w-[88%] h-[92%] bg-[#DAE7E0] rounded-2xl" />
 
           {/* Photo */}
-          <div className="relative w-full max-w-[480px] aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
-            <div className="absolute w-full h-full bg-gray-700/30 to-transparent z-10"></div>
+          <div className="relative w-full max-w-[480px] aspect-[3/3] rounded-2xl overflow-hidden shadow-2xl">
+            {/* <div className="absolute w-full h-full bg-gray-700/30 to-transparent z-10"></div> */}
             <Image src={assets.hero} alt="Senator Ahmed Wadada Aliyu" fill className="object-cover object-top" priority />
           </div>
         </motion.div>
       </div>
 
       {/* ── STATS BAR ── */}
-      <motion.div
-        variants={containerVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.5 }}
-        className="w-full"
-      >
+      <motion.div variants={containerVariants} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.5 }} className="w-full">
         <div className="max-w-3xl mx-auto px-6 py-10 grid grid-cols-3 gap-4 text-center">
           {stats.map((s) => (
             <motion.div key={s.label} variants={fadeUp} className="flex flex-col gap-1">
-              <span className="text-3xl sm:text-4xl font-bold text-primary">
+              <span className="text-3xl sm:text-4xl font-bold font-fraunces text-primary">
                 <AnimatedNumber target={s.value} suffix={s.suffix} />
               </span>
-              <span className="text-xs sm:text-sm text-gray-500 font-medium">{s.label}</span>
+              <span className="text-md font-semibold text-[#212121] font-instrument-serif italic font-medium">{s.label}</span>
             </motion.div>
           ))}
         </div>

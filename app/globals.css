@@ -13,16 +13,30 @@
 
   --font-anton: var(--font-anton);
   --font-architects-daughter: var(--font-architects-daughter);
-  --font-sn-pro: var(--font-sn-pro);
-
-  /* Colors */
-  --color-primary: #006E38;
+  --font-fraunces: var(--font-fraunces);
+  --font-instrument-serif: var(--font-instrument-serif);
+  --font-inter: var(--font-inter);
+  
+  /* Colors */ 
+  --color-primary: #006e38;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
+  }
+}
+
+@layer utilities {
+  .text-stroke {
+    color: white;
+    text-shadow:
+      -2px -2px 0 #d29300,
+      2px -2px 0 #d29300,
+      -2px 2px 0 #d29300,
+      2px 2px 0 #d29300;
+    font-size: 4rem;
   }
 }
 
@@ -40,6 +54,35 @@ body {
   font-family: var(--font-architects-daughter);
 }
 
-.font-sn-pro {
-  font-family: var(--font-sn-pro);
+.font-fraunces {
+  font-family: var(--font-fraunces);
+}
+
+.font-imstrument-serif {
+  font-family: var(--font-instrument-serif);
+}
+
+.font-inter {
+  font-family: var(--font-inter);
+}
+
+.input {
+  @apply w-full border border-gray-200 rounded-lg px-4 py-3 text-sm outline-none focus:border-green-600;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.input:focus {
+  border-color: #15803d;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 2px rgba(21, 128, 61, 0.1);
 }

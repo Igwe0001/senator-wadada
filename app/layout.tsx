@@ -1,7 +1,7 @@
-import { Anton, Architects_Daughter, SN_Pro } from "next/font/google";
+import { Anton, Architects_Daughter, Fraunces, Instrument_Serif, Inter } from "next/font/google";
 
 import "./globals.css";
-// import Footer from "@/components/layout/Footer";
+import Footer from "@/components/layout/Footer";
 import Navbar from "@/components/layout/Navbar";
 
 export const metadata = {
@@ -48,16 +48,28 @@ const anton = Anton({
   variable: "--font-anton",
 });
 
+const inter = Inter({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-inter",
+});
+
 const architectsDaughter = Architects_Daughter({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-architects-daughter",
 });
 
-const SNPro = Architects_Daughter({
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: "400",
-  variable: "--sn-pro",
+  variable: "--font-instrument-serif",
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-fraunces",
 });
 
 export default function RootLayout({
@@ -67,10 +79,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${anton.variable} ${architectsDaughter.variable} ${SNPro.variable} font-sn-pro`}>
+      <body className={`${anton.variable} ${architectsDaughter.variable} ${fraunces.variable} ${instrumentSerif.variable} ${inter.variable}`}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
