@@ -57,7 +57,7 @@ const fourthGridData: GridInterface[] = [
   { image: assets.image132 },
   { image: assets.image133 },
   { image: assets.image134 },
-  { image: assets.image135 },
+//   { image: assets.image135 },
 ];
 
 const fifthGridData: GridInterface[] = [
