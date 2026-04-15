@@ -152,7 +152,7 @@ import image143 from "./image-143.png";
 import image144 from "./image-144.png";
 import image145 from "./image-145.png";
 import image146 from "./image-146.png";
-import image147 from "./image-147.png";
+import image147 from "./image-147.jpeg";
 import image148 from "./image-148.png";
 import image149 from "./image-149.png";
 import image150 from "./image-150.png";
