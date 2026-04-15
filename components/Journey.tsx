@@ -41,7 +41,7 @@ export const careerEntries: TimelineEntry[] = [
   },
   {
     period: "2023 – Present",
-    organisation: "Social Democratic Party (SDP)",
+    organisation: "",
     role: "Elected Senator, Nasarawa West Senatorial District",
   },
 ];

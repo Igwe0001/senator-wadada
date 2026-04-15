@@ -84,7 +84,7 @@ const records = [
   },
   {
     image: assets.image89,
-    title: "Senate of the Federal Republic (2023–Present)",
+    title: "Senator of the Federal Republic (2023–Present)",
     subtitle: "Chairman — Senate Public Accounts Committee (SPAC)",
     imageOnLeft: true,
     committees: [
