@@ -29,7 +29,7 @@ const PILLARS = [
   {
     id: "trade",
     angleDeg: 180,
-    title: "Trade, Invest\n& Industry",
+    title: "Trade, Investment\n& Industry",
     subtitle: "Jobs, Business, and\nEconomic Expansion",
   },
   {
